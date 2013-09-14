@@ -4,7 +4,7 @@ import mythruna.event.EventType;
 import mythruna.event.PlayerEvent;
 import mythruna.event.PlayerEvents;
 
-public class OnMethod {
+public class On {
 	public static void onPlayerJoined() { //Name this whatever you want, MUST BE PUBLIC AND STATIC!
 		// Adding the event
 		@Override
