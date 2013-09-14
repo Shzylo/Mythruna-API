@@ -4,7 +4,7 @@
  * - playerConnected: When a player is currently logging into the server.
  * - playerDisconnected: When a player is currently disconnecting.
  *
- * - playerJoin: When the player Joins. On a server, this is called after 'playerConnected'.
+ * - playerJoined: When the player Joins. On a server, this is called after 'playerConnected'.
  * - playerLeft: When the player Leaves. On a server, this is called after 'playerDisconnected'.
  *
  * - playerChatted: When the player has said something in the chat.
@@ -15,7 +15,7 @@
  */
 println "on Method Loaded"
 
-on([playerJoin]) {
+on([playerJoined]) {
   type, event -> //This just basically initializes it.
 
 	// we are getting the player here
