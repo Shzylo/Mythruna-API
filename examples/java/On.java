@@ -7,8 +7,8 @@ import mythruna.event.PlayerEvents;
 public class On {
 	public static void onPlayerJoined() { //Name this whatever you want, MUST BE PUBLIC AND STATIC!
 		// Adding the event
-		@Override
 		EventDispatcher.getInstance().addListener(PlayerEvents.playerJoined, new EventListener<PlayerEvent>() {
+			@Override
 			public void newEvent(EventType<PlayerEvent> type, PlayerEvent event) { //Registers the event
 				String playerName = event.getContext().getPlayerData().get("characterInfo.name");
 				event.getContext().echo("Hello there, " + playerName);
